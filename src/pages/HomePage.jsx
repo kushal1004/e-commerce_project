@@ -12,6 +12,7 @@ export function HomePage () {
 
       <div className='home-page'>
         <div className='products-grid'>
+            
           {products.map(product => {
             return (
               <div key={product.id} className='product-container'>
@@ -64,6 +65,7 @@ export function HomePage () {
               </div>
             )
           })}
+
         </div>
       </div>
     </>
