@@ -1,8 +1,11 @@
 import dayjs from 'dayjs'
 import { formatMoney } from '../../utils/money'
+import { Fragment } from 'react'
+import { Link } from 'react-router'
 
 export function OrdersGrid({ orders }){
     return(
+      <>
        <div className='orders-grid'>
         
             {orders.map(order => {
@@ -74,5 +77,6 @@ export function OrdersGrid({ orders }){
               )
             })}
         </div> 
+      </>
     )
 }
